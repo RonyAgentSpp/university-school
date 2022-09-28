@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Univerdade Portugal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">Universidade</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+         <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Professores</a></li>
+          <li><a href="#">Alunos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <script src="mobile-navbar.js"></script>
+<!--INICIO FOOTER-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>SOBRE A UNIVERSIDADE</h4>
+        <ul>
+          <li><a href="#">Unidades</a></li>
+          <li><a href="#">Sustentabilidade</a></li>
+          <li><a href="#">Regulamentos</a></li>
+          <li><a href="#">Instituições de Ensino</a></li>
+       <li><a href="#">Trabalhe na Universidade</a></li>
+       <li><a href="#">Convêncios com empresas</a></li>
+       <li><a href="#">Seja Parceiro</a></li>
+       <li><a href="#">Seja Fornecedor</a></li>
+       <li><a href="#">Politica de Privacidade</a></li> 
+        </ul>
+      </div>
+      <br>
+      <div class="footer-col">
+        <h4>ESTUDE NA FACULDADE</h4>
+        <ul>
+          <li><a href="#">Por que nossa Graduação</a></li>
+          <li><a href="#">Por que nossa Pós?</a></li>
+          <li><a href="#">Bolsas e Financiamentos</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Modelos de Ensino</a></li>
+       <li><a href="#">Formas de Ingresso</a></li>
+       <li><a href="#">Internacionalização</a></li>
+       <li><a href="#">Club do Aluno</a></li>
+       <li><a href="#">Sou Calouro</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>INSCREVA-SE</h4>
+        <ul>
+          <li><a href="#">Vestibular</a></li>
+          <li><a href="#">Transferência</a></li>
+          <li><a href="#">2ª Graduação</a></li>
+          <li><a href="#">Mestrado & Doutorado</a></li>
+          <li><a href="#">Dicas de Estudos</a></li>
+          <li><a href="#">Ensino Digital</a></li>
+          <li><a href="#">Mercardo de Trabalho</a></li>
+        
+      
+        </ul>
+      </div>
+
+        <div class="footer-col">
+          <h4>CONTATO</h4>
+          <ul>
+            <li><a href="#">Telefone:</a></li>
+            <li><a href="#">+55(21)97007-9469</a></li>
+            <li><a href="#">e-mail:</a></li>
+            <li><a href="#">ronaldo.lima_2013@hotmail.com</a></li>
+            <li><a href="#">ronymuaythai@outlook.com</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+      </div>
+   
+   <div class="footer-col">
+    <br>
+     <h4>FALE COM AGENTE</h4>
+     <ul>
+       <li><a href="#">Fale com Agente</a></li>
+       <li><a href="#">Atendimento</a></li>
+       <li><a href="#">Ouvidoria</a></li>
+     </ul>
+   </div>
+
+      <div class="footer-col">
+        <br>
+        <h4>SIGA-NOS</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+      </div>
+      <div class="footer-col">
+        <br>
+        <h4>SIGA-NOS</h4>
+           <p>Copy & Right: All Reserved Rony Inside Code 2022.</p>
+
+</footer>
+  </body>
+</html>
+
+_____________________________________________________________________________________________________
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #000000;
+    height: 8vh;
+  }
+  
+  main {
+    background: url("./img/9.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /*INICIO FOOTER RESPÇONSIVE*/
+
+ 
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(116, 104, 104, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #000000;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	background-color: #ffffff;
+}
+
+p{
+  color: #ffffff;
+ 
+}
+
+h1{
+  color: rgb(0, 0, 0);
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+  /*FINAL FOOTER*/
+
+  /*CSS PARA SLIDE*/
+
+ 
+_____________________________________________________________________________________________________
+
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();
+  
+
+
+ 
+
+
+
+
+
